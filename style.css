@@ -42,16 +42,17 @@ nav {
 }
 
 .nav-desktop {
-  width: 500px;
+  /* width: 500px; */
   display: flex;
   justify-content: space-between;
   list-style: none;
+  
 }
 
 .cabeza {
   display: inline-block;
   padding: 0 3.125em;
-  color: #a5a5a5;
+  color: #052fb7;
   font-weight: bold;
   font-size: 0.6875rem;
   letter-spacing: 0.205em;
