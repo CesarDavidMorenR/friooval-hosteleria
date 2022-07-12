@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-principal {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fcfbfa;
+}
+
+/* NAV CODE BEGIN */
+
+.cajita_general {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #f3fbfb;
+}
+
+.header_primer {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  /* transform: translateX(50px); */
+}
+
+.nav-desktop {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.cabeza {
+  display: inline-block;
+  padding: 0 3.125em;
+  color: #a5a5a5;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  letter-spacing: 0.205em;
+}
+
+.triggerMenu {
+  width: 100%;
+  background-color: #ffffff;
+  display: none;
+  box-shadow: 0 -3px 6px #00000029;
+  margin-top: 5px;
+}
+
+.hacer_menu_responsi_visible {
+  display: block;
+}
+
+.triggerMenu ul {
+  padding: 20px 0 20px 15px;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+header {
+  margin-top: 87px;
+}
+
+/* NAV CODE END*/
+
+/* MAIN CODE BEGIN */
+
+.tittle-categorias {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tittle-categorias > h2:hover {
+  background-color: #052fb7;
+  color: #5796b0;
+}
+
+.container-categorias {
+  margin: 0 auto;
+}
+
+.categorias-contenido {
+  display: flex;
+  justify-content: center;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+.maquinaria-selector {
+  font-size: 1rem;
+  /* margin-right: 10px; */
+}
+
+.mobilario-selector {
+  font-size: 1rem;
+  /* margin-right: 10px; */
+}
+
+.repuestos-selector {
+  font-size: 1rem;
+}
+
+.maquinaria-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.mobilario-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.repuestos-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.maquinaria > h2,
+.mobilario > h2,
+.repuestos > h2 {
+  transform: translateX(40px);
+}
+
+.cocina-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(-40px);
+}
+
+.baño-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(40px);
+}
+
+.sillas-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(-40px);
+}
+
+.muebles-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(40px);
+}
+
+.frio-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(-40px);
+}
+
+.calor-card {
+  background-image: url("./assets/logo.jpg");
+  width: 100px;
+  height: 100px;
+  transform: translateX(40px);
+}
+
+.servicios-container {
+  margin-top: 7px;
+}
+
+.servicios-container > h2 {
+  text-align: center;
+}
+
+.lista-servicios {
+  list-style: none;
+}
+
+.lista-servicios > li {
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
+/* .text-servicioTecnico{
+  display:none;
+} */
+
+.catalogo-container {
+  background-color: #f3fbfb;
+  color: #052fb7;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 15px;
+  text-align: center;
+}
+
+.parrafo-catalogo {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* MAIN CODE END */
+
+/* FOOTER CODE BEGIN */
+
+.header-socials {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 27px;
+}
+
+footer {
+  background-color: #f3fbfb;
+  color: #052fb7;
+}
+
+.trademark {
+  text-align: center;
+}
+
+/* FOOTER CODE END */
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1001px) {
+  .titulo {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cajita_general {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 29px;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .titulo {
+    display: none;
+  }
+}
